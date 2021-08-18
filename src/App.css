@@ -19,16 +19,6 @@
   text-align: center;
 }
 
-.main-content {
-  display: grid;
-  place-content: center;
-  grid-template-columns: auto auto;
-  gap: 1.5em;
-  margin-top: 2em;
-  /* transform-style: preserve-3d;
-  transform: rotateY(15deg) rotateX(65deg) rotateZ(-25deg); */
-}
-
 .header {
   text-decoration: none;
   color: inherit;
