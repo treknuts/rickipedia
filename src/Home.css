@@ -2,7 +2,7 @@
 .content {
   display: grid;
   place-content: center;
-  grid-template-columns: auto auto;
+  grid-template-columns: auto auto auto auto auto;
   margin-top: 2em;
   transform-style: preserve-3d;
   transform: rotateY(15deg) rotateX(65deg) rotateZ(-25deg);
