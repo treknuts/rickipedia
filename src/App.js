@@ -21,7 +21,7 @@ function App() {
     <div className="App">
       <BrowserRouter>
         <div className="header">
-          <Link to="/"><h1>Rickipedia</h1></Link>
+          <Link to="/" className="header"><h1>Rickipedia</h1></Link>
           <div className="nav-list">
             <Link id="characters" to='/characters'>Characters</Link>
             <Link id="episodes" to='/episodes'>Episodes</Link>
@@ -30,10 +30,10 @@ function App() {
         </div>  
         <div className="main-content">
           <Switch>
-            <Route exact path="" component={App}/>
+            <Route exact path="/" component={this}/>
             <Route path="/characters" component={Characters}/>
-            <Route exact path="/episodes" component={App}/>
-            <Route exact path="/Locations" component={App}/>
+            <Route exact path="/episodes" component={this}/>
+            <Route exact path="/Locations" component={this}/>
           </Switch>
         </div>
       </BrowserRouter>

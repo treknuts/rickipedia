@@ -8,7 +8,7 @@ const CharacterCard = (props) => {
                 <h2>{ props.character.name } <i class="fas fa-external-link-alt"></i></h2>
                 <div className={ props.character.status }>{ props.character.status }</div>
             </div>
-            <img src={ props.character.image } className="card-image"/>
+            <img src={ props.character.image } className="card-image" />
             <div className="card-body">
                 <div className="body-item">
                     <p style={{ fontWeight: 'bold'}}>Species </p><p>{ props.character.species }</p>

@@ -1,0 +1,7 @@
+.content {
+    display: grid;
+    place-content: center;
+    grid-template-columns: auto auto;
+    gap: 1.5em;
+    margin-top: 2em;
+}

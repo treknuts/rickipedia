@@ -29,6 +29,15 @@
   transform: rotateY(15deg) rotateX(65deg) rotateZ(-25deg); */
 }
 
+.header {
+  text-decoration: none;
+  color: inherit;
+}
+
+.header:hover {
+  text-decoration: underline;
+}
+
 .nav-list {
   font-size:  x-large;
   margin-top: 1em;
