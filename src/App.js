@@ -17,15 +17,13 @@ function App() {
             <Link id="episodes" to='/episodes'>Episodes</Link>
             <Link id="locations" to='/locations'>Locations</Link>
           </div>
-        </div>  
-        <div className="main-content">
-          <Switch>
-            <Route exact path="/" component={Home}/>
-            <Route path="/characters" component={Characters}/>
-            <Route exact path="/episodes" component={this}/>
-            <Route exact path="/Locations" component={this}/>
-          </Switch>
         </div>
+        <Switch>
+          <Route exact path="/" component={Home} />
+          <Route path="/characters" component={Characters} />
+          <Route exact path="/episodes" component={this} />
+          <Route exact path="/Locations" component={this} />
+        </Switch>
       </BrowserRouter>
     </div>
   );

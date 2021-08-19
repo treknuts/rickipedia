@@ -1,4 +1,4 @@
-import React, { useEffect, useState} from 'react';
+import React, { useEffect, useState } from 'react';
 import './Home.css';
 const axios = require('axios');
 
@@ -16,7 +16,7 @@ const Home = () => {
 
   return (
     <div className="content">
-        { characters.map((character) => <img key={ character.id } src={ character.image }/>)}
+      {characters.map((character) => <img key={character.id} src={character.image} />)}
     </div>
   );
 }

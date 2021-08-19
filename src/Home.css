@@ -1,11 +1,16 @@
-
 .content {
-  margin-top: -20rem;
-  margin-left: 15rem;
+  padding: 5em;
+  overflow-y: hidden;
+  margin-top: -12em;
   display: grid;
-  gap: 0.5em;
-  place-content: center;
+  gap: 1em;
   grid-template-columns: auto auto auto auto auto;
   transform-style: preserve-3d;
-  transform: rotateY(15deg) rotateX(65deg) rotateZ(-25deg);
+  transform: rotate3d(1, .25, 1, -45deg);
+}
+
+.content > img {
+  border-radius: 8px;
+  width: 100%;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
 }
