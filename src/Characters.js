@@ -16,7 +16,7 @@ const Characters = () => {
   }, []);
 
     return (
-    <div className="content">
+    <div className="card-container">
         { characters.map((character) => <CharacterCard key={character.id} character={character}/> )}
       </div>
     );

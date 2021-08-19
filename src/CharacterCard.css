@@ -36,10 +36,11 @@
 
 .Alive, .Dead, .unknown {
     width: fit-content;
-    padding: .25rem .5rem .25rem .5rem;
+    padding: 0.5em 1em 0.5em 1em;
     border-radius: 8px;
     color: #282828;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    font-weight: 600;
 }
 
 .Alive {

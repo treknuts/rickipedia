@@ -1,4 +1,5 @@
-.content {
+.card-container {
+    padding: 1em;
     display: grid;
     place-content: center;
     grid-template-columns: auto auto;
