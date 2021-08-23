@@ -1,36 +1,42 @@
 .card {
-    background: #ffffff;
     display: flex;
     flex-flow: column nowrap;
     align-items: center;
-    padding: 1em;
     border-radius: 8px;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    width: 75%;
+    color: var(--text-2);
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
 }
 
 .card-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 100%;
+    width: 95%;
+    color: var(--text-1);
+    padding: 1em;
 }
 
 .card-body {
+    color: --var(--text-2);
     display: flex;
-    justify-content: space-between;
+    width: 100%;
 }
 
 .body-item {
     margin: 1em;
 }
 
-.card > img {
+.info {
+    display: flex;
+    flex-direction: column;
+}
+
+.card-body > img {
     width: 100%;
-    max-width: 20em;
+    max-width: 15em;
     height: auto;
-    margin: 1em;
-    border-radius: 5px;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 0 8px 0 8px;
 }
 
 
@@ -38,9 +44,8 @@
     width: fit-content;
     padding: 0.5em 1em 0.5em 1em;
     border-radius: 8px;
-    color: #282828;
+    color: var(--surface2);
     box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
-    font-weight: 600;
 }
 
 .Alive {
@@ -52,5 +57,5 @@
 }
 
 .unknown {
-    background: #bdbdbd;
+    background: var(--text-1);
 }

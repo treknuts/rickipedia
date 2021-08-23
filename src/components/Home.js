@@ -6,8 +6,7 @@ const Home = () => {
   const [characters, setCharacters] = useState([]);
 
   useEffect(() => {
-    axios.get('https://rickandmortyapi.com/api/character', { params: { page: 1 } }).then(function (response) {
-      console.log(response.data.results);
+    axios.get('https://rickandmortyapi.com/api/character?page=1').then(function (response) {
       setCharacters(response.data.results);
     }).catch(function (error) {
       console.log(error);

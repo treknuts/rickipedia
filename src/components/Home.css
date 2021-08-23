@@ -1,12 +1,13 @@
+
 .content {
-  padding: 5em;
-  overflow-y: hidden;
-  margin-top: -12em;
+  padding: 12em;
+  overflow: hidden;
+  margin: -12em 0 0 5em;
   display: grid;
   gap: 1em;
   grid-template-columns: auto auto auto auto auto;
   transform-style: preserve-3d;
-  transform: rotate3d(1, .25, 1, -45deg);
+    transform: scale(1.35) rotateY(15deg) rotateX(60deg) rotateZ(-20deg);
 }
 
 .content > img {

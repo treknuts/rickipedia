@@ -1,17 +1,17 @@
-import './App.css';
 import React from 'react';
+import './styles/app.css';
 import { BrowserRouter, Link, Switch, Route } from 'react-router-dom';
-import Characters from './Characters';
-import Home from './Home';
-const axios = require('axios');
+import Characters from './components/Characters';
+import Home from './components/Home';
+import Episodes from './components/Episodes';
 
 
 function App() {
   return (
     <div className="App">
       <BrowserRouter>
-        <div className="header">
-          <Link to="/" className="header"><h1>Rickipedia</h1></Link>
+        <div className="header surface1">
+          <Link to="/"><h1>Rickipedia</h1></Link>
           <div className="nav-list">
             <Link id="characters" to='/characters'>Characters</Link>
             <Link id="episodes" to='/episodes'>Episodes</Link>
@@ -21,8 +21,8 @@ function App() {
         <Switch>
           <Route exact path="/" component={Home} />
           <Route path="/characters" component={Characters} />
-          <Route exact path="/episodes" component={this} />
-          <Route exact path="/Locations" component={this} />
+          <Route exact path="/episodes" component={Episodes} />
+          <Route exact path="/Locations" component={Home} />
         </Switch>
       </BrowserRouter>
     </div>

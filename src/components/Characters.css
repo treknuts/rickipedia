@@ -1,0 +1,22 @@
+.card-container {
+    display: grid;
+    gap: 1em;
+    /* Ensure equal width columns */
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    padding: 3em;
+    place-items: center;
+}
+
+.pagination-row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.pag-button {
+    margin: 1em;
+    border-radius: 100%;
+    border: none;
+    color: var(--surface2);
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0);
+}
