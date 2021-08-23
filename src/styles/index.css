@@ -2,8 +2,8 @@
   /* Theme variables */
   --green: #97ce4c;
   --blue: #01b0c8;
-  --surface1: #2e3538;
-  --surface2: #484e50;
+  --surface1: #394246;
+  --surface2: #2e3538;
   --text-1: #b6c2c9;
   --text-2: #6b94a5;
   --surface-shadow: var(--surface1);
@@ -16,7 +16,8 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   border: 1px solid transparent;
-  background: linear-gradient(45deg, var(--blue), var(--green) 55%);
+  /* background: linear-gradient(45deg, var(--blue), var(--green) 55%); */
+  background: #2e3538;
 }
 
 h1, h2, h3, h4, h5, p {
