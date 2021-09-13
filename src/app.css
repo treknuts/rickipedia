@@ -9,13 +9,15 @@
     align-items: center;
     justify-content: space-between;
     padding: 0.5em;
-    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
-    color: var(--text-1);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
 }
 
 .header > a {
     text-decoration: none;
-    color: var(--text-2);
     font-size: 48px;
 }
 
@@ -25,7 +27,6 @@
 
 .nav-list > a {
     text-decoration: none;
-    color: var(--text-1);
     margin: 0.5em 1em;
     padding: .25em 0.5em;
     border-radius: 50em;
@@ -36,6 +37,24 @@
 
 .nav-list > a:hover {
     background-color: var(--text-1);
-    color: var(--surface2);
+    color: var(--surface1);
     box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+@media screen and (max-width: 768px) {
+
+    .header  {
+        top: auto;
+        bottom: 0;
+        background: var(--red);
+    }
+
+    .header > a {
+        display: none;
+    }
+
+    .nav-list > a {
+        margin: auto;
+    }
+
 }

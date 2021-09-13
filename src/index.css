@@ -1,0 +1,71 @@
+* {
+    /* Theme variables */
+    --red: #ff5555;
+    --blue: #1652f0;
+    --surface1: #ffffff;
+    --surface2: #999999;
+    --text-2: #282828;
+    --text-1: #424242;
+}
+  
+body {
+    margin: 0;
+    font-family: 'Helvetica', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    border: 1px solid transparent;
+    /* background: linear-gradient(45deg, var(--blue), var(--green) 55%); */
+}
+  
+h1, h2, h3, h4, h5, p {
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    margin-top: 12rem;
+}
+  
+.shadow {
+    
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+.text-blue {
+    color: var(--blue);
+    font-weight: bold;
+}
+
+.text-red {
+    color: var(--red);
+}
+  
+.text1 {
+    color: var(--text-1);
+}
+  
+.text2 {
+    color: var(--text-2);
+}
+  
+  
+.surface1 {
+    background-color: var(--surface1);
+    color: var(--text1);
+}
+  
+.surface2 {
+    background-color: var(--surface2);
+    color: var(--text2);
+}
+  
+.content {
+    margin: 0;
+    padding: 0;
+}
+
+@media screen and (max-width: 768px) {
+    main {
+        margin: auto;
+    }
+}

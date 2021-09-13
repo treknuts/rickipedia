@@ -36,7 +36,7 @@ const Characters = () => {
   }
 
   return (
-    <div>
+    <main>
       <div className="pagination-row">
         <button className="pag-button" onClick={() => prevPage()}>
           <FontAwesomeIcon icon={faArrowCircleLeft} size="4x" />
@@ -56,7 +56,7 @@ const Characters = () => {
           <FontAwesomeIcon icon={faArrowCircleRight} size="4x" />
         </button>
       </div>
-    </div>
+    </main>
   );
 }
 

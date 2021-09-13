@@ -7,16 +7,16 @@ const Home = () => {
 
   useEffect(() => {
     axios.get('https://rickandmortyapi.com/api/character?page=1').then(function (response) {
-      setCharacters(response.data.results);
+      setCharacters(response.data.results.slice(0, 5));
     }).catch(function (error) {
       console.log(error);
     });
   }, []);
 
   return (
-    <div className="content">
+    <main className="content">
       {characters.map((character) => <img key={character.id} src={character.image} />)}
-    </div>
+    </main>
   );
 }
 

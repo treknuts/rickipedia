@@ -3,9 +3,8 @@
     flex-flow: column nowrap;
     align-items: center;
     border-radius: 8px;
-    width: 75%;
+    padding: 3em;
     color: var(--text-2);
-    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
 }
 
 .card-header {
@@ -44,12 +43,13 @@
     width: fit-content;
     padding: 0.5em 1em 0.5em 1em;
     border-radius: 8px;
-    color: var(--surface2);
+    color: white;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
 }
 
 .Alive {
     background: #97ce4c;
+    color: var(--text-2)
 }
 
 .Dead {
@@ -58,4 +58,15 @@
 
 .unknown {
     background: var(--text-1);
+}
+
+@media screen and (max-width: 768px) {
+   .card {
+       padding: 0.5em;
+       display: block;
+   }
+
+   .card-body {
+       display: block;
+   }
 }

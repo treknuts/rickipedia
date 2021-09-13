@@ -20,9 +20,9 @@ const Episodes = () => {
     }, [page]);
 
     return (
-        <div className="ep-container">
-            { episodes.map((episode) => <p>{episode.name }</p>)}
-        </div>
+        <main className="ep-container">
+            { episodes.map((episode) => <p key={episode.id}>{episode.name }</p>)}
+        </main>
     );
 }
 
