@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import './Characters.css';
+import './Characters.scss';
 import CharacterCard from './CharacterCard';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowCircleRight, faArrowCircleLeft } from '@fortawesome/free-solid-svg-icons';

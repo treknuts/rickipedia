@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import './Episodes.css';
+import './Episodes.scss';
 const axios = require('axios');
 
 const Episodes = () => {
