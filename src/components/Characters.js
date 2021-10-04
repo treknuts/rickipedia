@@ -1,8 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import './Characters.scss';
 import CharacterCard from './CharacterCard';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faArrowCircleRight, faArrowCircleLeft } from '@fortawesome/free-solid-svg-icons';
+import { Container, Row, Col } from 'react-bootstrap';
 const axios = require('axios');
 
 const Characters = () => {
@@ -21,7 +20,8 @@ const Characters = () => {
     }).catch(function (error) {
       console.log(error);
     });
-  }, [currentPage]);
+    console.log(characters[0]);
+  }, []);
 
   const nextPage = () => {
     if (pageInfo.next) {
@@ -37,25 +37,14 @@ const Characters = () => {
 
   return (
     <main>
-      <div className="pagination-row">
-        <button className="pag-button" onClick={() => prevPage()}>
-          <FontAwesomeIcon icon={faArrowCircleLeft} size="4x" />
-        </button>
-        <button className="pag-button" onClick={() => nextPage()}>
-          <FontAwesomeIcon icon={faArrowCircleRight} size="4x" />
-        </button>
-      </div>
-      <div className="card-container">
-        {characters.map((character) => <CharacterCard key={character.id} character={character} />)}
-      </div>
-      <div className="pagination-row">
-        <button className="pag-button" onClick={() => prevPage()}>
-          <FontAwesomeIcon icon={faArrowCircleLeft} size="4x" />
-        </button>
-        <button className="pag-button" onClick={() => nextPage()}>
-          <FontAwesomeIcon icon={faArrowCircleRight} size="4x" />
-        </button>
-      </div>
+      <Container fluid>
+        <Row className="d-flex justify-content-center">
+          { 
+            characters && 
+            characters.map((character) => <CharacterCard character={character} /> )
+          }
+        </Row>
+      </Container>
     </main>
   );
 }

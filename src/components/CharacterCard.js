@@ -17,7 +17,8 @@ const CharacterCard = ({ character }) => {
     } 
 
     return (
-        <Card style={{ width: '25em' }}>
+        <div className="col-md-3 mb-3">
+        <Card className="light shadow w-100" >
             <Card.Img variant="left" src={character.image} className="h-auto"/>
             <Card.Body>
                 <Card.Title>
@@ -33,6 +34,7 @@ const CharacterCard = ({ character }) => {
                 <Button variant="success">Show More</Button>
             </Card.Body>
         </Card>
+</div>
     );
 }
 
